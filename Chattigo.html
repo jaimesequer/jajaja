@@ -633,3 +633,375 @@ function copiarParrafoLocal(idElemento) {
 </script>
 </p>
 
+
+
+
+
+  </datalist>
+    </p>
+
+    <p>- Recurso: <input type="text" id="res_recurso" class="input-estandar" readonly></p>
+    <p>- Cerrajero: <input type="text" id="res_cerrajero" class="input-estandar" readonly></p>
+</div>
+
+<script>
+function buscarDatosVehiculo() {
+    var inputElement = document.getElementById('vehiculo_input');
+    var campoRecurso = document.getElementById('res_recurso');
+    var campoCerrajero = document.getElementById('res_cerrajero');
+    var lista = document.getElementById('lista-vehiculos');
+
+    // Limpiamos el texto que entra para que no falle por un espacio de más
+    var textoBuscado = inputElement.value.trim().toLowerCase();
+
+    if (textoBuscado === "") {
+        campoRecurso.value = "";
+        campoCerrajero.value = "";
+        return;
+    }
+
+    var opciones = lista.options;
+    var encontrado = false;
+
+    for (var i = 0; i < opciones.length; i++) {
+        // Comparamos lo que el usuario escribió con el valor de la lista (ambos en minúsculas)
+        if (opciones[i].value.trim().toLowerCase() === textoBuscado) {
+            campoRecurso.value = opciones[i].getAttribute('data-recurso');
+            campoCerrajero.value = opciones[i].getAttribute('data-cerrajero');
+            encontrado = true;
+            break; 
+        }
+    }
+
+    if (!encontrado) {
+        campoRecurso.value = "";
+        campoCerrajero.value = "";
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<style>
+    body { 
+        /* MUY IMPORTANTE: Quita toda la ruta C:\Users\... y deja solo el nombre */
+        background-image: url("Suraa.png"); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+    }
+
+    .container, .info-section { 
+        background: rgba(255, 255, 255, 0.9); 
+        padding: 20px; 
+        border-radius: 10px; 
+        margin-bottom: 20px; 
+    }
+
+    html { scroll-behavior: smooth; }
+    /* ... el resto de tu CSS ... */
+
+
+
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-5px);
+    background-color: #128c7e;
+}
+
+.whatsapp-btn img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* Para que en móviles se vea solo el círculo */
+@media (max-width: 600px) {
+    .whatsapp-btn span { display: none; }
+    .whatsapp-btn { padding: 15px; border-radius: 50%; }
+    .whatsapp-btn img { margin-right: 0; }
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="animacion-contenedor">
+    <img src="avion.gif" class="avion">
+</div>
+
+
+.animacion-contenedor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Lo pone detrás de tu texto */
+    pointer-events: none; /* Permite hacer clic en lo que esté debajo */
+}
+
+.avion {
+    position: absolute;
+    top: 10%; /* Altura del avión */
+    width: 150px;
+    animation: cruzar 15s linear infinite;
+}
+
+.auto {
+    position: absolute;
+    bottom: 5%; /* Altura del auto (en el suelo) */
+    width: 100px;
+    animation: cruzar 10s linear infinite;
+}
+
+/* Animación para que vayan de izquierda a derecha */
+@keyframes cruzar {
+    from { left: -200px; }
+    to { left: 100%; }
+}
+
+
+
+
+
+
+
+
+
+</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025-2026 / Creado por Jaime R. Sequera T.<br>
+Asistencia Sura - Autos.
+</footer>
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Estilo SURA</title>
+    
+    <!-- Enlace para que el logo de WhatsApp funcione siempre (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f7f9;
+            height: 2000px; /* Solo para probar el scroll */
+        }
+
+        /* --- HEADER SURA --- */
+        header { 
+            background: rgba(0, 51, 160, 0.85); 
+            color: #ffffff;      
+            padding: 60px 20px;  
+            text-align: center;
+            backdrop-filter: blur(5px); 
+            -webkit-backdrop-filter: blur(5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* --- MENÚ DE NAVEGACIÓN --- */
+        nav { 
+            background: rgba(0, 40, 132, 0.9); 
+            display: flex; 
+            justify-content: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 999; 
+            backdrop-filter: blur(3px);
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* --- BOTÓN FLOTANTE WHATSAPP (DERECHA) --- */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-btn i {
+            font-size: 22px;
+            margin-right: 10px;
+        }
+
+        /* --- BOTÓN FLOTANTE NIK (IZQUIERDA) --- */
+        .nik-btn {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            background: #0033a0; /* Azul SURA */
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 900;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(0, 51, 160, 0.4);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .nik-btn:hover {
+            background: #002884;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 51, 160, 0.6);
+        }
+
+        /* Ajuste para móviles */
+        @media (max-width: 600px) {
+            .whatsapp-btn span { display: none; }
+            .whatsapp-btn { padding: 15px; border-radius: 50%; }
+            .whatsapp-btn i { margin: 0; }
+        }
+    </style>
+</head>
+<body>
+
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <!-- Botón NIK (Izquierda) -->
+    <a href="https://nik.grupokonecta.co:7070/" class="nik-btn" target="_blank">
+        NIK
+    </a>
+
+    <!-- Botón WhatsApp (Derecha) -->
+    <a href="https://wa.me/573112485318" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Escríbenos</span>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Botón Inicio Flotante (Azul SURA) -->
+<a href="#" style="
+    position: fixed;
+    bottom: 85px; /* Ajustado para que flote sobre el de contacto */
+    right: 25px;
+    background-color: #0033a0; 
+    color: white; 
+    padding: 12px 25px; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 1001;
+    transition: transform 0.3s;
+    min-width: 140px;
+    font-family: 'Segoe UI', Arial, sans-serif;">
+    <i class="fas fa-home" style="margin-right: 10px;"></i>
+    <span>Inicio</span>
+</a>
+
+
+
+
+</body>
+</html>
+
+
+
+
+</body>
+</html>
+
