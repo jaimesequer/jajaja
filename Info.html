@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="asunto" placeholder="Asunto">
+<br><br>
+
+<textarea id="mensaje" placeholder="Escribe el mensaje"></textarea>
+<br><br>
+
+<button onclick="abrirOutlook()">Abrir Outlook</button>
+
+<script>
+function abrirOutlook() {
+
+  const asunto = encodeURIComponent(
+    document.getElementById("asunto").value
+  );
+
+  const mensaje = encodeURIComponent(
+    document.getElementById("mensaje").value
+  );
+
+  const link =
+    `https://outlook.office.com/mail/deeplink/compose?to=ventas@empresa.com&subject=${asunto}&body=${mensaje}`;
+
+  window.open(link, "_blank");
+}
+</script>
+
+</body>
+</html>
