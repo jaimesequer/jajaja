@@ -254,10 +254,10 @@ Servicios de Asistencia  - Front</h1>
 <!-- BLOQUE: Salvedades de Asistencia Interactivas por Ítems V2 -->
 <div id="v2_bloqueSalvedadesGenerales" style="font-family: sans-serif; width: 100%; max-width: 100%; margin: 15px 0;">
     <!-- Botón Encabezado de la Lista Desplegable -->
-    <button id="v2_btnAcordeonSalvedades" onclick="v2_alternarAcordeonSalvedades()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #333333; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-        <span id="v2_textoBtnSalvedades">Leer Salvedades 📋</span>
-        <span id="v2_flechaAcordeon">▼</span>
-    </button>
+<button id="v2_btnAcordeonSalvedades" onclick="v2_alternarAcordeonSalvedades()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
+    <span id="v2_textoBtnSalvedades">Leer Salvedades 📋</span>
+    <span id="v2_flechaAcordeon">▼</span>
+</button>
     
     <!-- Contenido Desplegable (Las Salvedades Individuales) -->
     <div id="v2_contenidoSalvedades" style="display: none; background-color: #ffffff; border: 1px solid #e0e0e0; border-top: none; border-radius: 0 0 6px 6px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); font-size: 14px; color: #333333;">
@@ -419,30 +419,26 @@ function v2_ocultarItem(idItem) {
         </select>
     </p>
 
-    <!-- Contenedor de Alertas Dobles para Hurto -->
-    <div id="bloque_alertas_hurto" style="display: none; gap: 10px; width: 100%; min-width: 520px; box-sizing: border-box; margin: 8px 0;">
-        <div style="flex: 1; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; font-weight: bold;">
-            ⚠️ Marcar guardianes: Contexto inseguro o peligroso.
-        </div>
-        <div style="flex: 1; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; font-weight: bold;">
-            ⚠️ Validar cobertura de la póliza, para proceder con el proceso de reclamación.
-        </div>
+<div id="bloque_alertas_hurto" style="display: none; gap: 10px; width: 100%; min-width: 520px; box-sizing: border-box; margin: 8px 0;">
+    <div style="flex: 1; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; font-weight: bold;">
+        ⚠️ Marcar guardianes: Contexto inseguro o peligroso.
     </div>
+    <div style="flex: 1; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; font-weight: bold;">
+        ⚠️ Validar cobertura de la póliza, para proceder con el proceso de reclamación.
+    </div>
+</div>
 
-    <!-- Alerta condicional para Lesionados -->
-    <div id="alerta_lesionados" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Alerta: Marcar Guardianes: Lesiones o muerte
-    </div>
+<div id="alerta_lesionados" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Marcar Guardianes: Lesiones o muerte
+</div>
 
-    <!-- Alerta condicional para Guardianes -->
-    <div id="alerta_guardianes_si" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Alerta: Marcar Guardianes
-    </div>
+<div id="alerta_guardianes_si" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Marcar Guardianes
+</div>
 
-    <!-- NUEVA Alerta condicional para Abogado en Sitio -->
-    <div id="alerta_abogado_sitio" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Alerta: Generar Abogado en sitio.
-    </div>
+<div id="alerta_abogado_sitio" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Generar Abogado en sitio.
+</div>
 </div>
 
 <script>
@@ -584,7 +580,7 @@ function copiarNuevaPlantillaChoque() {
 <ul>
 
 <div id="v3_bloqueSalvedadesGenerales" style="font-family: sans-serif; width: 100%; max-width: 100%; margin: 15px 0;">
-    <button id="v3_btnAcordeonSalvedades" onclick="v3_alternarAcordeonSalvedades()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #333333; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <button id="v3_btnAcordeonSalvedades" onclick="v3_alternarAcordeonSalvedades()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
         <span id="v3_textoBtnSalvedades">Leer Salvedades 📋</span>
         <span id="v3_flechaAcordeon">▼</span>
     </button>
@@ -734,30 +730,30 @@ function v3_ocultarItem(idItem) {
         </select>
     </p>
 
-    <!-- Contenedor de Alertas Dobles para Hurto (Solo visible si se marca Hurto) -->
-    <div id="bloque_alertas_hurto_art2" style="display: none; gap: 10px; width: 100%; min-width: 520px; box-sizing: border-box; margin: 8px 0;">
-        <div style="flex: 1; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; font-weight: bold;">
-            ⚠️ Marcar guardianes: Contexto inseguro o peligroso.
-        </div>
-        <div style="flex: 1; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; font-weight: bold;">
-            ⚠️ Validar cobertura de la póliza, para proceder con el proceso de reclamación.
-        </div>
+<!-- Contenedor de Alertas Dobles para Hurto -->
+<div id="bloque_alertas_hurto_art2" style="display: none; gap: 10px; width: 100%; min-width: 520px; box-sizing: border-box; margin: 8px 0;">
+    <div style="flex: 1; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; font-weight: bold;">
+        ⚠️ Marcar guardianes: Contexto inseguro o peligroso.
     </div>
+    <div style="flex: 1; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; font-weight: bold;">
+        ⚠️ Validar cobertura de la póliza, para proceder con el proceso de reclamación.
+    </div>
+</div>
 
-    <!-- Alerta condicional para Lesionados -->
-    <div id="alerta_lesionados_art2" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Alerta: Marcar Guardianes: Lesiones o muerte
-    </div>
+<!-- Alerta condicional para Lesionados -->
+<div id="alerta_lesionados_art2" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Marcar Guardianes: Lesiones o muerte
+</div>
 
-    <!-- Alerta condicional para Guardianes (Sí) -->
-    <div id="alerta_guardianes_si_art2" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Alerta: Marcar Guardianes
-    </div>
+<!-- Alerta condicional para Guardianes (Sí) -->
+<div id="alerta_guardianes_si_art2" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Marcar Guardianes
+</div>
 
-    <!-- NUEVA: Alerta condicional para Zona de Alto Riesgo -->
-    <div id="alerta_alto_riesgo_art2" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Alerta: Ofrecer Asistencia Legal.
-    </div>
+<!-- NUEVA: Alerta condicional para Zona de Alto Riesgo -->
+<div id="alerta_alto_riesgo_art2" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Ofrecer Asistencia Legal.
+</div>   
 </div>
 
 <script>
@@ -881,10 +877,10 @@ function copiarPlantillaArticulo2() {
 <!-- BLOQUE: Salvedades de Asistencia Interactivas por Ítems V4 (Independiente) -->
 <div id="v4_bloqueSalvedadesGenerales" style="font-family: sans-serif; width: 100%; max-width: 100%; margin: 15px 0;">
     <!-- Botón Encabezado de la Lista Desplegable -->
-    <button id="v4_btnAcordeonSalvedades" onclick="v4_alternarAcordeonSalvedades()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #333333; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-        <span id="v4_textoBtnSalvedades">Leer Salvedades 📋</span>
-        <span id="v4_flechaAcordeon">▼</span>
-    </button>
+<button id="v4_btnAcordeonSalvedades" onclick="v4_alternarAcordeonSalvedades()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
+    <span id="v4_textoBtnSalvedades">Leer Salvedades 📋</span>
+    <span id="v4_flechaAcordeon">▼</span>
+</button>
     
     <!-- Contenido Desplegable (Las Salvedades Individuales) -->
     <div id="v4_contenidoSalvedades" style="display: none; background-color: #ffffff; border: 1px solid #e0e0e0; border-top: none; border-radius: 0 0 6px 6px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); font-size: 14px; color: #333333;">
@@ -1047,20 +1043,20 @@ function v4_ocultarItem(idItem) {
         </select>
     </p>
 
-    <!-- Alerta condicional para Lesiones o Muerte -->
-    <div id="alerta_guardianes_v21" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Marcar guardianes: Lesiones o Muerte.
-    </div>
+ <!-- Alerta condicional para Lesiones o Muerte -->
+<div id="alerta_guardianes_v21" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Marcar guardianes: Lesiones o Muerte.
+</div>
 
-    <!-- Alerta condicional para Tránsito No -->
-    <div id="alerta_transito_v21" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #bee5eb; background-color: #d1ecf1; color: #0c5460; box-sizing: border-box; font-weight: bold;">
-        🚨 Sugerirle que se comunique con las autoridades de tránsito.
-    </div>
+<!-- Alerta condicional para Tránsito No -->
+<div id="alerta_transito_v21" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    🚨 Sugerirle que se comunique con las autoridades de tránsito.
+</div>
 
-    <!-- Alerta condicional para Ambulancia No -->
-    <div id="alerta_orientacion_medica" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Alerta: Ofrecer Orientación Médica Telefónica.
-    </div>
+<!-- Alerta condicional para Ambulancia No -->
+<div id="alerta_orientacion_medica" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Ofrecer Orientación Médica Telefónica.
+</div>
 </div>
 
 <script>
@@ -1185,11 +1181,11 @@ function copiarPlantillaArticuloNuevo() {
 
 <!-- BLOQUE: Salvedades de Asistencia Interactivas por Ítems V5 (Independiente) -->
 <div id="v5_bloqueSalvedadesGenerales" style="font-family: sans-serif; width: 100%; max-width: 100%; margin: 15px 0;">
-    <!-- Botón Encabezado de la Lista Desplegable -->
-    <button id="v5_btnAcordeonSalvedades" onclick="v5_alternarAcordeonSalvedades()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #333333; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-        <span id="v5_textoBtnSalvedades">Leer Salvedades 📋</span>
-        <span id="v5_flechaAcordeon">▼</span>
-    </button>
+<!-- Botón Encabezado de la Lista Desplegable -->
+<button id="v5_btnAcordeonSalvedades" onclick="v5_alternarAcordeonSalvedades()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
+    <span id="v5_textoBtnSalvedades">Leer Salvedades 📋</span>
+    <span id="v5_flechaAcordeon">▼</span>
+</button>
     
     <!-- Contenido Desplegable (La Salvedad Única) -->
     <div id="v5_contenidoSalvedades" style="display: none; background-color: #ffffff; border: 1px solid #e0e0e0; border-top: none; border-radius: 0 0 6px 6px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); font-size: 14px; color: #333333;">
@@ -1285,10 +1281,10 @@ function v5_ocultarItem(idItem) {
         </select>
     </p>
 
-    <!-- Alerta condicional para Asistencia Jurídica "Sí" (No es copiable) -->
-    <div id="alerta_juridica_v22" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Validar en asistencia que abogado lo atendió, y contactar a este para dejarlo en conferencia.
-    </div>
+   <!-- Alerta condicional para Asistencia Jurídica "Sí" (No es copiable) -->
+<div id="alerta_juridica_v22" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Validar en asistencia que abogado lo atendió, y contactar a este para dejarlo en conferencia.
+</div>
 
     <!-- Entidad que inmovilizó con nueva lista, pregunta larga inicial y barra alargada -->
     <p style="margin: 5px 0;">Entidad que inmovilizó el vh: <br>
@@ -1427,10 +1423,10 @@ function copiarPlantillaV22() {
         </select>
     </p>
 
-    <!-- Alerta condicional para Hurto (No es copiable) -->
-    <div id="alerta_hurto" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Marcar guardianes si fue al momento: Contexto inseguro o peligroso
-    </div>
+   <!-- Alerta condicional para Hurto (No es copiable) -->
+<div id="alerta_hurto" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Marcar guardianes si fue al momento: Contexto inseguro o peligroso
+</div>
 
     <!-- CONTENEDOR DINÁMICO 1: Registrar reclamación (Aparece solo si es Hurto) -->
     <div id="contenedor_reclamacion" style="display: none; border-left: 2px solid #ccc; padding-left: 10px; margin: 10px 0;">
@@ -1814,10 +1810,6 @@ function copiarPlantillaCita() {
 
 
 
-
-
-
-
 <button onclick="copiarNuevaPlantilla()">Plantilla de Observaciones y SARA</button>
 
 <div id="miParrafo8_UI" style="margin-top: 15px; font-family: sans-serif; font-size: 14px; line-height: 1.6; max-width: 100%;">
@@ -1832,9 +1824,9 @@ function copiarPlantillaCita() {
     </p>
 
     <!-- ALERTA CONDICIONAL: Guardianes -->
-    <div id="alerta_guardianes" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Marcar Guardianes.
-    </div>
+<div id="alerta_guardianes" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Marcar Guardianes.
+</div>
 
     <!-- 2. En vía pública -->
     <p style="margin: 5px 0;">En vía pública: <br>
@@ -1865,10 +1857,10 @@ function copiarPlantillaCita() {
         </select>
     </p>
 
-    <!-- NUEVA ALERTA CONDICIONAL MULTIMEDIA -->
-    <div id="alerta_multimedia_v8" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Solicitarle fotos y videos del vehículo.
-    </div>
+   <!-- NUEVA ALERTA CONDICIONAL MULTIMEDIA -->
+<div id="alerta_multimedia_v8" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Solicitarle fotos y videos del vehículo.
+</div>
 
     <!-- 4. Envío a taller -->
     <p style="margin: 5px 0;">Envío a taller: <br>
@@ -1892,10 +1884,10 @@ function copiarPlantillaCita() {
         </select>
     </p>
 
-    <!-- Alerta de rescate operativa en pantalla -->
-    <div id="alerta_rescate" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Generar rescate de parqueadero
-    </div>
+  <!-- Alerta de rescate operativa en pantalla -->
+<div id="alerta_rescate" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Generar rescate de parqueadero
+</div>
 
     <!-- 6. Bloqueo -->
     <p style="margin: 5px 0;">Bloqueo: <br>
@@ -1960,10 +1952,10 @@ function copiarPlantillaCita() {
             </select>
         </p>
 
-        <!-- ALERTA DINÁMICA: Desplazamiento máximo asientos -->
-        <div id="alerta_desplazamiento_asientos" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-            ⚠️ Alerta: El desplazamiento aplica para máximo el número de asientos que el vehículo asegurado tenga.
-        </div>
+       <!-- ALERTA DINÁMICA: Desplazamiento máximo asientos -->
+<div id="alerta_desplazamiento_asientos" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: El desplazamiento aplica para máximo el número de asientos que el vehículo asegurado tenga.
+</div>
 
         <!-- CONTENEDOR DINÁMICO: Desplazamiento -->
         <div id="seccion_desplazamiento" style="display: none; border-left: 2px solid #bbb; padding-left: 10px; margin: 10px 0;">
@@ -2003,10 +1995,10 @@ function copiarPlantillaCita() {
                 </select>
             </p>
             
-            <!-- ALERTA DINÁMICA: Restricción Maletas -->
-            <div id="alerta_maletas_restriccion" style="display: none; width: 100%; min-width: 505px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-                ⚠️ Alerta: Recuerda que solo aplica para las personas, si hay muchas maletas, no se enviará otro vh por ello.
-            </div>
+  <!-- ALERTA DINÁMICA: Restricción Maletas -->
+<div id="alerta_maletas_restriccion" style="display: none; width: 100%; min-width: 505px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Recuerda que solo aplica para las personas, si hay muchas maletas, no se enviará otro vh por ello.
+</div>
 
             <p id="extra_maletas" style="display: none; margin: 5px 0; padding-left: 15px;">
                 <input type="text" id="v_detalle_maletas" placeholder="¿Podría indicarme cuántas son y de qué tamaño aproximadamente?" style="width: 100%; min-width: 505px; padding: 4px; font-family: inherit; box-sizing: border-box;">
@@ -2299,14 +2291,7 @@ function evaluarSalvedades() {
 </div>
 <p>Se lleva hasta su ciudad de circulación, o una diferente siempre y cuando esté más cerca que la ciudad de circulación.<br></p><br>    
 
-
-
 <ul>
-
-
-
-
-
 
 
 <!-- SECCIÓN NUEVA: PÓLIZA DE MANEJO ESPECIAL -->
@@ -2627,10 +2612,10 @@ function evaluarAlertasPolizasEspeciales() {
             </select>
         </p>
 
-        <!-- Alerta multimedia -->
-        <div id="alerta_multimedia_p5" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-            ⚠️ Solicitarle fotos y videos del vehículo.
-        </div>
+     <!-- Alerta multimedia -->
+<div id="alerta_multimedia_p5" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Solicitarle fotos y videos del vehículo.
+</div>
 
         <!-- En vía pública -->
         <p style="margin: 5px 0;">En vía pública: <br>
@@ -2690,9 +2675,9 @@ function evaluarAlertasPolizasEspeciales() {
         </p>
 
         <!-- ALERTA DINÁMICA: Desplazamiento máximo asientos -->
-        <div id="p5_alerta_desplazamiento_asientos" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-            ⚠️ Alerta: El desplazamiento aplica para máximo el número de asientos que el vehículo asegurado tenga.
-        </div>
+<div id="p5_alerta_desplazamiento_asientos" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: El desplazamiento aplica para máximo el número de asientos que el vehículo asegurado tenga.
+</div>
 
         <!-- CONTENEDOR DINÁMICO: Desplazamiento -->
         <div id="p5_seccion_desplazamiento" style="display: none; border-left: 2px solid #bbb; padding-left: 10px; margin: 10px 0;">
@@ -2994,13 +2979,11 @@ function copiarPlantillaCompleta() {
 
 
 
+
 </p>
 
 <br>
     <strong>Ofrecer desplazamiento si está en el sitio o si el asegurado lo solicita, de lo contrario, NO.</strong><br>
-
-
-
 
 
 <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 15px; margin: 15px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); font-family: sans-serif; font-size: 14px; line-height: 1.6; color: #333333;">
@@ -3123,13 +3106,13 @@ function evaluarSalvedadesPesados() {
                 </select>
             </p>
 
-            <div id="alerta_rescate_l" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-                ⚠️ Generar rescate de parqueadero
-            </div>
+           <div id="alerta_rescate_l" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Generar rescate de parqueadero
+</div>
 
-            <div id="alerta_multimedia_l" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-                ⚠️ Solicitarle fotos y videos del vehículo.
-            </div>
+<div id="alerta_multimedia_l" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Solicitarle fotos y videos del vehículo.
+</div>
             <p style="margin: 5px 0;">En vía pública: <br>
                 <select id="l_via_publica" onchange="evaluarAlertasLiviano()" style="width: 100%; min-width: 520px; padding: 4px; font-family: inherit;">
                     <option value="" selected>¿Me puede confirmar si están en vía pública?</option>
@@ -3211,10 +3194,10 @@ function evaluarSalvedadesPesados() {
                 </select>
             </p>
 
-            <!-- Alerta asientos máximos Liviano -->
-            <div id="l_alerta_desplazamiento_asientos" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-                ⚠️ Alerta: El desplazamiento aplica para máximo el número de asientos que el vehículo asegurado tenga.
-            </div>
+           <!-- Alerta asientos máximos Liviano -->
+<div id="l_alerta_desplazamiento_asientos" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: El desplazamiento aplica para máximo el número de asientos que el vehículo asegurado tenga.
+</div>
             <div id="l_seccion_desplazamiento" style="display: none; border-left: 2px solid #bbb; padding-left: 10px; margin: 10px 0;">
                 <p style="margin: 5px 0;">Personas: <br>
                     <input type="text" id="l_personas" style="width: 100%; min-width: 520px; padding: 4px; font-family: inherit; box-sizing: border-box;" placeholder="¿Cuántas personas viajan en el vehículo?">
@@ -3247,10 +3230,10 @@ function evaluarSalvedadesPesados() {
                     </select>
                 </p>
 
-                <!-- Alerta restrictiva maletas Liviano -->
-                <div id="l_alerta_maletas_restriccion" style="display: none; width: 100%; min-width: 505px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-                    ⚠️ Alerta: Recuerda que solo aplica para las personas, si hay muchas maletas, no se enviará otro vh por ello.
-                </div>
+              <!-- Alerta restrictiva maletas Liviano -->
+<div id="l_alerta_maletas_restriccion" style="display: none; width: 100%; min-width: 505px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Recuerda que solo aplica para las personas, si hay muchas maletas, no se enviará otro vh por ello.
+</div>
 
                 <p id="l_extra_maletas" style="display: none; margin: 5px 0; padding-left: 15px;">
                     <input type="text" id="l_detalle_maletas" placeholder="¿Podría indicarme cuántas son y de qué tamaño aproximadamente?" style="width: 100%; min-width: 505px; padding: 4px; font-family: inherit; box-sizing: border-box;">
@@ -3402,9 +3385,9 @@ function evaluarSalvedadesPesados() {
                 </select>
             </p>
 
-            <div id="alerta_multimedia_p" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-                ⚠️ Solicitarle fotos y videos del vehículo.
-            </div>
+            <div id="alerta_multimedia_p" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Solicitarle fotos y videos del vehículo.
+</div>
 
             <p style="margin: 5px 0;">En vía pública: <br>
                 <select id="p_via_publica" onchange="evaluarAlertasPesado()" style="width: 100%; min-width: 520px; padding: 4px; font-family: inherit;">
@@ -3458,10 +3441,10 @@ function evaluarSalvedadesPesados() {
                 </select>
             </p>
 
-            <!-- Alerta asientos máximos Pesado -->
-            <div id="p_alerta_desplazamiento_asientos" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-                ⚠️ Alerta: El desplazamiento aplica para máximo el número de asientos que el vehículo asegurado tenga.
-            </div>
+          <!-- Alerta asientos máximos Pesado -->
+<div id="p_alerta_desplazamiento_asientos" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: El desplazamiento aplica para máximo el número de asientos que el vehículo asegurado tenga.
+</div>
 
             <div id="p_seccion_desplazamiento" style="display: none; border-left: 2px solid #bbb; padding-left: 10px; margin: 10px 0;">
                 <p style="margin: 5px 0;">Personas: <br><input type="text" id="p_personas" style="width: 100%; min-width: 520px; padding: 4px; font-family: inherit; box-sizing: border-box;" placeholder="¿Cuántas personas viajan en el vehículo?"></p>
@@ -4066,9 +4049,9 @@ En caso de que en zonificación no se cuente con taller para moto, se debe trasl
     </p>
 
     <!-- Alerta multimedia activa para casos críticos -->
-    <div id="alerta_multimedia_27" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Solicitarle fotos y videos del vehículo.
-    </div>
+<div id="alerta_multimedia_27" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Solicitarle fotos y videos del vehículo.
+</div>
 
     <!-- 6. Bloqueo -->
     <p style="margin: 5px 0;">Bloqueo: <br>
@@ -4302,9 +4285,9 @@ Si estas por fuera de los 30 km del centro administrativo de tu ciudad de circul
     </p>
 
     <!-- Alerta multimedia crítica -->
-    <div id="alerta_multimedia_28" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Solicitarle fotos y videos del vehículo.
-    </div>
+<div id="alerta_multimedia_28" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Solicitarle fotos y videos del vehículo.
+</div>
 
     <!-- 6. Bloqueo -->
     <p style="margin: 5px 0;">Bloqueo: <br>
@@ -4344,10 +4327,10 @@ Si estas por fuera de los 30 km del centro administrativo de tu ciudad de circul
         </select>
     </p>
 
-    <!-- Alerta asientos máximos -->
-    <div id="alerta_desplazamiento_asientos_28" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Alerta: El desplazamiento aplica para máximo el número de asientos que el vehículo asegurado tenga.
-    </div>
+   <!-- Alerta asientos máximos -->
+<div id="alerta_desplazamiento_asientos_28" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: El desplazamiento aplica para máximo el número de asientos que el vehículo asegurado tenga.
+</div>
 
     <!-- Contenedor Desplazamiento integrado idéntico al de carros -->
     <div id="seccion_desplazamiento_28" style="display: none; border-left: 2px solid #bbb; padding-left: 10px; margin: 10px 0;">
@@ -4382,11 +4365,10 @@ Si estas por fuera de los 30 km del centro administrativo de tu ciudad de circul
             </select>
         </p>
 
-        <!-- Alerta restrictiva maletas -->
-        <div id="alerta_maletas_restriccion_28" style="display: none; width: 100%; min-width: 505px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-            ⚠️ Alerta: Recuerda que solo aplica para las personas, si hay muchas maletas, no se enviará otro vh por ello.
-        </div>
-
+       <!-- Alerta restrictiva maletas -->
+<div id="alerta_maletas_restriccion_28" style="display: none; width: 100%; min-width: 505px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Recuerda que solo aplica para las personas, si hay muchas maletas, no se enviará otro vh por ello.
+</div>
         <p id="extra_maletas_28" style="display: none; margin: 5px 0; padding-left: 15px;">
             <input type="text" id="detalle_maletas_28" placeholder="¿Podría indicarme cuántas son y de qué tamaño aproximadamente?" style="width: 100%; min-width: 505px; padding: 4px; font-family: inherit; box-sizing: border-box;">
         </p>
@@ -4555,20 +4537,10 @@ function copiarSARA_28() {
 
 
 
-
-
-
-
-
-
 </p>
 
 <br>
     <strong>Ofrecer desplazamiento si está en el sitio o si el asegurado lo solicita, de lo contrario, NO.</strong><br>
-
-
-
-
 
 
 <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 15px; margin: 15px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); font-family: sans-serif; font-size: 14px; line-height: 1.6; color: #333333;">
@@ -4700,14 +4672,14 @@ function evaluarSalvedades28M() {
     </p>
 
     <!-- Alerta visual de parqueadero -->
-    <div id="alerta_rescate_carro_28" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Generar rescate de parqueadero
-    </div>
+<div id="alerta_rescate_carro_28" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Generar rescate de parqueadero
+</div>
 
-    <!-- Alerta multimedia -->
-    <div id="alerta_multimedia_carro_28" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Solicitarle fotos y videos del vehículo.
-    </div>
+<!-- Alerta multimedia -->
+<div id="alerta_multimedia_carro_28" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Solicitarle fotos y videos del vehículo.
+</div>
 
     <!-- 6. Bloqueo -->
     <p style="margin: 5px 0;">Bloqueo: <br>
@@ -4893,13 +4865,6 @@ function copiarPlantillaCompleta28_carro() {
 </script>
 
 
-
-
-
-
-
-
-
 <br><br>
 
 <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 15px; margin: 15px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); font-family: sans-serif; font-size: 14px; line-height: 1.6; color: #333333;">
@@ -4923,6 +4888,7 @@ function copiarPlantillaCompleta28_carro() {
 
 
 
+
 </p>
 
   </ul>
@@ -4935,17 +4901,11 @@ function copiarPlantillaCompleta28_carro() {
         <a href="https://nik.grupokonecta.co:7070/#/app/articles/18201" target="_blank" rel="noopener noreferrer" style="background-color: #0033a0; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; font-size: 13px; font-weight: bold; display: inline-block;">Art. Nik 📄</a>
 </div>
 
-
-
 <p>Aplica a la ciudad o municipio más cercano donde pueda ser reparado el vh (Comparar si es más cerca el destino que nos brinde o del Mapa de talleres).<br>
 <strong>En caso de que lleve maletas y requiere desplazamiento:</strong> El desplazamiento por inmovilización del vh, solo aplica para las personas, si hay muchas maletas, no se enviará otro vh por ello.<br>
 <br></p><br>    
 
-
-
 <ul>
-
-
 
 
 
@@ -4987,14 +4947,14 @@ function copiarPlantillaCompleta28_carro() {
     </p>
 
     <!-- Alerta visual de parqueadero -->
-    <div id="alerta_rescate_asistencia_31" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Generar rescate de parqueadero
-    </div>
+<div id="alerta_rescate_asistencia_31" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Generar rescate de parqueadero
+</div>
 
-    <!-- Alerta multimedia -->
-    <div id="alerta_multimedia_asistencia_31" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Solicitarle fotos y videos del vehículo.
-    </div>
+<!-- Alerta multimedia -->
+<div id="alerta_multimedia_asistencia_31" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Solicitarle fotos y videos del vehículo.
+</div>
 
     <!-- En vía pública -->
     <p style="margin: 5px 0;">En vía pública: <br>
@@ -5083,9 +5043,9 @@ function copiarPlantillaCompleta28_carro() {
     </p>
 
     <!-- Alerta asientos máximos -->
-    <div id="alerta_desplazamiento_asientos_31" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Alerta: El desplazamiento aplica para máximo el número de asientos que el vehículo asegurado tenga.
-    </div>
+<div id="alerta_desplazamiento_asientos_31" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: El desplazamiento aplica para máximo el número de asientos que el vehículo asegurado tenga.
+</div>
 
     <!-- CONTENEDOR DINÁMICO: Desplazamiento Estandarizado -->
     <div id="seccion_desplazamiento_31" style="display: none; border-left: 2px solid #bbb; padding-left: 10px; margin: 10px 0;">
@@ -5121,9 +5081,9 @@ function copiarPlantillaCompleta28_carro() {
         </p>
 
         <!-- Alerta restrictiva maletas -->
-        <div id="alerta_maletas_restriccion_31" style="display: none; width: 100%; min-width: 505px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-            ⚠️ Alerta: Recuerda que solo aplica para las personas, si hay muchas maletas, no se enviará otro vh por ello.
-        </div>
+<div id="alerta_maletas_restriccion_31" style="display: none; width: 100%; min-width: 505px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Recuerda que solo aplica para las personas, si hay muchas maletas, no se enviará otro vh por ello.
+</div>
 
         <p id="extra_maletas_31" style="display: none; margin: 5px 0; padding-left: 15px;">
             <input type="text" id="v_det_mal31" placeholder="¿Podría indicarme cuántas son y de qué tamaño aproximadamente?" style="width: 100%; min-width: 505px; padding: 4px; font-family: inherit; box-sizing: border-box;">
@@ -5332,22 +5292,10 @@ function copiarPlantilla31() {
 }
 </script>
 
-   
-
-
-
-
-
-
-
 </p>
 
 <br>
     <strong>Ofrecer desplazamiento si está en el sitio o si el asegurado lo solicita, de lo contrario, NO.</strong><br>
-
-
-
-
 
 
 <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 15px; margin: 15px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); font-family: sans-serif; font-size: 14px; line-height: 1.6; color: #333333;">
@@ -5477,9 +5425,9 @@ function evaluarSalvedades31() {
     </p>
 
     <!-- Alerta multimedia -->
-    <div id="alerta_multimedia_moto_v2" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Solicitarle fotos y videos del vehículo.
-    </div>
+<div id="alerta_multimedia_moto_v2" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: Solicitarle fotos y videos del vehículo.
+</div>
 
     <!-- 6. Bloqueo -->
     <p style="margin: 5px 0;">Bloqueo: <br>
@@ -5648,14 +5596,8 @@ function copiarPlantillaSARA_V2() {
 }
 </script>
 
-
-
-
-
-
 <br>
 <br>
-
 
 <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 15px; margin: 15px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); font-family: sans-serif; font-size: 14px; line-height: 1.6; color: #333333;">
     <strong>Salvedades:</strong><br><br>
@@ -5668,6 +5610,7 @@ function copiarPlantillaSARA_V2() {
         </select>
     </p>
 </div>
+
 
 
 
@@ -5747,10 +5690,12 @@ function copiarPlantillaSARA_V2() {
         </select>
     </p>
 
-    <!-- ALERTA AMARILLA CONDICIONAL -->
-    <div id="alerta_soporte_v3" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Crear el expediente como "Desplazamiento por Inmovilización del Vehículo", y dejar en observaciones Click y en Bitácora: “El desplazamiento debe llevar soporte para bicicletas”.
-    </div>
+    <!-- ALERTA ROJA CONDICIONAL -->
+<div id="alerta_soporte_v3" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+    ⚠️ Alerta: <br>
+- Crear el expediente como "Desplazamiento por Inmovilización del Vehículo". <br>
+ - Dejar en observaciones Click y en Bitácora: “El desplazamiento debe llevar soporte para bicicletas”.
+</div>
 
     <!-- 6. Tipo de daño (Separado visualmente al final) -->
     <p style="margin: 15px 0 5px 0; padding-top: 10px;">Tipo de daño: <br>
@@ -5981,63 +5926,64 @@ function copiarPlantillaV3() {
 
 <br></p>    
 
+
 <div class="alerta-geocerca-simple">
     📌 <strong>Alerta:</strong> Aplica con geocerca normal y ampliada en: Bogotá, Cali, Manizales, Medellín, Palmira, Pereira, Rionegro (Antioquia), Cartago, Armenia, Cartagena, Buga, Ibagué, Barranquilla, Tuluá, Tunja, Valledupar, Popayán, Villavicencio, Santa Marta, Pasto, Barrancabermeja, Sincelejo, Neiva, Bucaramanga, Montería, Apartadó, Cúcuta.
 </div>
 
 <style>
     .alerta-geocerca-simple {
-        background-color: #f4f9fd;
-        border-left: 4px solid #28a745; /* Color verde de cobertura/aplica */
+        background-color: #fff3cd; /* Fondo amarillo claro */
+        border-left: 4px solid #ffc107; /* Línea lateral amarilla */
         padding: 12px 15px;
         margin: 15px 0;
         font-family: sans-serif;
-        font-size: 13.5px;
+        font-size: 15px; /* Tamaño de letra a 15px */
         line-height: 1.5;
-        color: #1c3d5a;
+        color: #000000; /* Letras completamente negras */
         box-sizing: border-box;
     }
 </style>
 
 
-
-
 <ul>
 
 
-<div id="bloqueSalvedadesGenerales" style="font-family: sans-serif; width: 100%; max-width: 100%; margin: 15px 0;">
-    <button id="btnAcordeonSalvedades" onclick="alternarAcordeonSalvedades()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #333333; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-        <span id="textoBtnSalvedades">Leer Salvedades 📋</span>
-        <span id="flechaAcordeon">▼</span>
+<!-- BLOQUE: Salvedades de Asistencia Interactivas por Ítems V120 -->
+<div id="v120_bloqueSalvedadesGenerales" style="font-family: sans-serif; width: 100%; max-width: 100%; margin: 15px 0;">
+    <!-- Botón Encabezado de la Lista Desplegable -->
+    <button id="v120_btnAcordeonSalvedades" onclick="v120_alternarAcordeonSalvedades()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
+        <span id="v120_textoBtnSalvedades">Leer Salvedades 📋</span>
+        <span id="v120_flechaAcordeon">▼</span>
     </button>
-    
-    <div id="contenidoSalvedades" style="display: none; background-color: #ffffff; border: 1px solid #e0e0e0; border-top: none; border-radius: 0 0 6px 6px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); font-size: 14px; color: #333333;">
-        <strong id="tituloSalvedades" style="color: #333333; display: block; margin-bottom: 10px;">Salvedades obligatorias a leer:</strong>
+
+    <div id="v120_contenidoSalvedades" style="display: none; background-color: #ffffff; border: 1px solid #e0e0e0; border-top: none; border-radius: 0 0 6px 6px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); font-size: 14px; color: #333333;">
+        <strong id="v120_tituloSalvedades" style="color: #333333; display: block; margin-bottom: 10px;">Salvedades obligatorias a leer:</strong>
         
-        <div id="itemSalvedad1" class="item-salvedad" style="background: #fdfdfd; border: 1px solid #eaeaea; border-radius: 4px; padding: 10px; margin-bottom: 10px; display: flex; flex-direction: column; gap: 8px;">
+        <div id="itemSalvedad1_120" class="item-salvedad-120" style="background: #fdfdfd; border: 1px solid #eaeaea; border-radius: 4px; padding: 10px; margin-bottom: 10px; display: flex; flex-direction: column; gap: 8px;">
             <p style="margin: 0; line-height: 1.5;">• El servicio se confirmará a través de un mensaje por WhatsApp.</p>
-            <button onclick="ocultarItem('itemSalvedad1')" style="align-self: flex-end; padding: 4px 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; font-size: 12px; font-weight: bold; cursor: pointer;">Listo ✓</button>
+            <button onclick="v120_ocultarItem('itemSalvedad1_120')" style="align-self: flex-end; padding: 4px 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; font-size: 12px; font-weight: bold; cursor: pointer;">Listo ✓</button>
         </div>
 
-        <div id="itemSalvedad2" class="item-salvedad" style="background: #fdfdfd; border: 1px solid #eaeaea; border-radius: 4px; padding: 10px; margin-bottom: 10px; display: flex; flex-direction: column; gap: 8px;">
+        <div id="itemSalvedad2_120" class="item-salvedad-120" style="background: #fdfdfd; border: 1px solid #eaeaea; border-radius: 4px; padding: 10px; margin-bottom: 10px; display: flex; flex-direction: column; gap: 8px;">
             <p style="margin: 0; line-height: 1.5;">• En caso de que desee cancelar la asistencia, modificar direcciones o cambiar la hora del servicio, le pedimos que lo haga con mínimo dos horas de anticipación. En caso de que solicite el servicio con menos de cuatro (4) horas deberás hacerlo con la mitad del tiempo. <br>
 Ejemplo: Si solicitas el servicio para dentro de 2 horas podrás, cancelar, modificar direcciones o cambiar la hora de recogida con una (1) hora de antelación al servicio.</p>
-            <button onclick="ocultarItem('itemSalvedad2')" style="align-self: flex-end; padding: 4px 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; font-size: 12px; font-weight: bold; cursor: pointer;">Listo ✓</button>
+            <button onclick="v120_ocultarItem('itemSalvedad2_120')" style="align-self: flex-end; padding: 4px 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; font-size: 12px; font-weight: bold; cursor: pointer;">Listo ✓</button>
         </div>
 
-        <div id="msgTodoListo" style="display: none; text-align: center; color: #155724; background-color: #d4edda; border: 1px solid #c3e6cb; padding: 15px; border-radius: 4px; font-weight: bold; font-size: 15px; margin: 10px 0;">
+        <div id="v120_msgTodoListo" style="display: none; text-align: center; color: #155724; background-color: #d4edda; border: 1px solid #c3e6cb; padding: 15px; border-radius: 4px; font-weight: bold; font-size: 15px; margin: 10px 0;">
             🎉 ¡Todas las salvedades han sido leídas exitosamente!
         </div>
     </div>
 </div>
 
 <script>
-// Lógica para abrir/cerrar la lista de salvedades
-function alternarAcordeonSalvedades() {
-    const contenido = document.getElementById('contenidoSalvedades');
-    const flecha = document.getElementById('flechaAcordeon');
+// Lógica para abrir/cerrar la lista de salvedades de la versión 120
+function v120_alternarAcordeonSalvedades() {
+    const contenido = document.getElementById('v120_contenidoSalvedades');
+    const flecha = document.getElementById('v120_flechaAcordeon');
     
-    if (contenido.style.display === 'none') {
+    if (contenido.style.display === 'none' || contenido.style.display === '') {
         contenido.style.display = 'block';
         flecha.innerText = '▲';
     } else {
@@ -6046,15 +5992,15 @@ function alternarAcordeonSalvedades() {
     }
 }
 
-// Oculta el ítem seleccionado y verifica si ya se terminaron todos
-function ocultarItem(idItem) {
+// Oculta el ítem seleccionado y verifica si ya se terminaron todos en la v120
+function v120_ocultarItem(idItem) {
     const item = document.getElementById(idItem);
     if (item) {
         item.style.display = 'none';
     }
 
-    // Verificar cuántos ítems quedan visibles
-    const todosLosItems = document.querySelectorAll('.item-salvedad');
+    // Verificar cuántos ítems específicos de la v120 quedan visibles
+    const todosLosItems = document.querySelectorAll('.item-salvedad-120');
     let itemsPendientes = 0;
 
     todosLosItems.forEach(function(el) {
@@ -6065,21 +6011,21 @@ function ocultarItem(idItem) {
 
     // Si ya no quedan ítems, actualizamos el contenedor principal
     if (itemsPendientes === 0) {
-        document.getElementById('tituloSalvedades').style.display = 'none';
-        document.getElementById('msgTodoListo').style.display = 'block';
+        document.getElementById('v120_tituloSalvedades').style.display = 'none';
+        document.getElementById('v120_msgTodoListo').style.display = 'block';
         
         // Cambiar el botón principal de la interfaz a verde exitoso inmediatamente
-        const botonHeader = document.getElementById('btnAcordeonSalvedades');
-        const textoBtn = document.getElementById('textoBtnSalvedades');
-        const contenido = document.getElementById('contenidoSalvedades');
-        const flecha = document.getElementById('flechaAcordeon');
+        const botonHeader = document.getElementById('v120_btnAcordeonSalvedades');
+        const textoBtn = document.getElementById('v120_textoBtnSalvedades');
+        const contenido = document.getElementById('v120_contenidoSalvedades');
+        const flecha = document.getElementById('v120_flechaAcordeon');
         
         botonHeader.style.backgroundColor = '#d4edda';
         botonHeader.style.color = '#155724';
         botonHeader.style.borderColor = '#c3e6cb';
-        textoBtn.innerText = '✅ Salvedades Leídas (Listo)';
+        textoBtn.innerText = '✅ Salvedades Leídas 🎉 (Listo)';
 
-        // Cierra el acordeón automáticamente tras 1.2 segundos para asegurar el feedback visual
+        // Cierra el acordeón automáticamente tras 1.2 segundos
         setTimeout(function() {
             contenido.style.display = 'none';
             flecha.innerText = '▼';
@@ -6087,7 +6033,6 @@ function ocultarItem(idItem) {
     }
 }
 </script>
-
 
 
 <button onclick="copiarPlantillaV4()">Plantilla de Observaciones y SARA</button>
@@ -6277,13 +6222,12 @@ Si por algún motivo el asegurado expresa que no acepta la alternativa del vouch
 
 
 
-<!-- BLOQUE: Condiciones Voucher Uber Interactivas (Ancho Expandido) -->
 <div id="bloqueCondicionesUber" style="font-family: sans-serif; max-width: 900px; width: 100%; margin: 15px 0;">
-    <!-- Botón Encabezado de la Lista Desplegable -->
-    <button id="btnAcordeonUber" onclick="alternarAcordeonUber()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #333333; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <button id="btnAcordeonUber" onclick="alternarAcordeonUber()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
         <span id="textoBtnUber">Leerle al asegurado las condiciones en caso de que acepte la alternativa 🚗</span>
         <span id="flechaAcordeonUber">▼</span>
     </button>
+
     
     <!-- Contenido Desplegable (Condiciones Individuales) -->
     <div id="contenidoUber" style="display: none; background-color: #ffffff; border: 1px solid #e0e0e0; border-top: none; border-radius: 0 0 6px 6px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); font-size: 14px; color: #333333;">
@@ -6391,7 +6335,7 @@ function ocultarItemUber(idItem) {
         setTimeout(function() {
             contenido.style.display = 'none';
             flecha.innerText = '▼';
-            textoBtn.innerText = '✅ Términos de Uber Leídos (Listo)';
+            textoBtn.innerText = '✅ Términos de Uber Leídos 🎉 (Listo)';
             botonHeader.style.backgroundColor = '#d4edda';
             botonHeader.style.color = '#155724';
             botonHeader.style.borderColor = '#c3e6cb';
@@ -6561,12 +6505,11 @@ function copiarContenidoLimpio() {
 • Se debe validar con el geocerca de Conductor Elegido y solo es válido con la normal, la geocerca ampliada NO.
 
 <br></p><br>    
-
+<ul>
 
 <!-- BLOQUE: Salvedades Servicio Desplazamiento Interactivas (Ancho Expandido) -->
 <div id="bloqueSalvedadesDesplazamiento" style="font-family: sans-serif; max-width: 900px; width: 100%; margin: 15px 0;">
-    <!-- Botón Encabezado de la Lista Desplegable -->
-    <button id="btnAcordeonDesplazamiento" onclick="alternarAcordeonDesplazamiento()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #333333; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <button id="btnAcordeonDesplazamiento" onclick="alternarAcordeonDesplazamiento()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
         <span id="textoBtnDesplazamiento">Leer Salvedades 🚘</span>
         <span id="flechaAcordeonDesplazamiento">▼</span>
     </button>
@@ -6676,7 +6619,7 @@ function ocultarItemDesplazamiento(idItem) {
         setTimeout(function() {
             contenido.style.display = 'none';
             flecha.innerText = '▼';
-            textoBtn.innerText = '✅ Salvedades Leídas (Listo)';
+            textoBtn.innerText = '✅ Salvedades Leídas 🎉 (Listo)';
             botonHeader.style.backgroundColor = '#d4edda';
             botonHeader.style.color = '#155724';
             botonHeader.style.borderColor = '#c3e6cb';
@@ -6686,7 +6629,7 @@ function ocultarItemDesplazamiento(idItem) {
 </script>
 
 
-<ul>
+
 
 
 
@@ -6853,10 +6796,11 @@ function copiarPlantillaV5() {
 <!-- BLOQUE: Salvedades Conductor Conductor Elegido Interactivas (Ancho Expandido - Fondo Amarillo) -->
 <div id="bloqueSalvedadesConductorElegido" style="font-family: sans-serif; max-width: 900px; width: 100%; margin: 15px 0;">
     <!-- Botón Encabezado de la Lista Desplegable (Fondo Amarillo Inicial) -->
-    <button id="btnAcordeonConductor" onclick="alternarAcordeonConductor()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <button id="btnAcordeonConductor" onclick="alternarAcordeonConductor()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
         <span id="textoBtnConductor">Leer Salvedades 🚘</span>
         <span id="flechaAcordeonConductor">▼</span>
     </button>
+
     
     <!-- Contenido Desplegable (Salvedades Individuales) -->
     <div id="contenidoConductor" style="display: none; background-color: #ffffff; border: 1px solid #e0e0e0; border-top: none; border-radius: 0 0 6px 6px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); font-size: 14px; color: #333333;">
@@ -6969,7 +6913,7 @@ function ocultarItemConductor(idItem) {
         setTimeout(function() {
             contenido.style.display = 'none';
             flecha.innerText = '▼';
-            textoBtn.innerText = '✅ Salvedades Leídas (Listo)';
+            textoBtn.innerText = '✅ Salvedades Leídas 🎉 (Listo)';
             botonHeader.style.backgroundColor = '#d4edda';
             botonHeader.style.color = '#155724';
             botonHeader.style.borderColor = '#c3e6cb';
@@ -7114,6 +7058,8 @@ Cuando nos ingrese una solicitud de Conductor Profesional debemos validar cual e
 
 
 
+
+
     <div id="paso-corriente-carro" class="info-section" style="font-family: Arial, sans-serif; padding: 20px;">
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
         <h2 style="margin: 0;">Paso de Corriente: Carro</h2>
@@ -7128,7 +7074,7 @@ Cuando nos ingrese una solicitud de Conductor Profesional debemos validar cual e
 <!-- BLOQUE: Pregunta Prioridad y Confirmación Interactivas (Ancho Expandido - Fondo Amarillo) -->
 <div id="bloquePrioridadConfirmacion" style="font-family: sans-serif; max-width: 900px; width: 100%; margin: 15px 0;">
     <!-- Botón Encabezado de la Lista Desplegable (Fondo Amarillo Inicial) -->
-    <button id="btnAcordeonPrioridad" onclick="alternarAcordeonPrioridad()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <button id="btnAcordeonPrioridad" onclick="alternarAcordeonPrioridad()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
         <span id="textoBtnPrioridad">Leer Salvedades 🔋</span>
         <span id="flechaAcordeonPrioridad">▼</span>
     </button>
@@ -7202,7 +7148,7 @@ function ocultarItemPrioridad(idItem) {
         setTimeout(function() {
             contenido.style.display = 'none';
             flecha.innerText = '▼';
-            textoBtn.innerText = '✅ Salvedades Leídas (Listo)';
+            textoBtn.innerText = '✅ Salvedades Leídas 🎉 (Listo)';
             botonHeader.style.backgroundColor = '#d4edda';
             botonHeader.style.color = '#155724';
             botonHeader.style.borderColor = '#c3e6cb';
@@ -7292,11 +7238,11 @@ function ocultarItemPrioridad(idItem) {
     </div>
 
     <!-- Alertas operativas -->
-    <div id="alerta_bateria_v9" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box;">
+<div id="alerta_bateria_v9" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
         🔋 <strong>Alerta:</strong> Ofrecer servicio de cambio de batería.
     </div>
 
-    <div id="alerta_grua_v9" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box;">
+    <div id="alerta_grua_v9" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
         ⚠️ <strong>Alerta:</strong> <span id="texto_alerta_grua">Ofrecer servicio de grúa.</span>
     </div>
 </div>
@@ -7437,8 +7383,7 @@ function copiarPlantillaV9() {
 
 <!-- BLOQUE: Salvedades Prioridad y WhatsApp (Sin Negrita - Fondo Amarillo) -->
 <div id="bloqueSalvedadesBateria" style="font-family: sans-serif; max-width: 900px; width: 100%; margin: 15px 0;">
-    <!-- Botón Encabezado de la Lista Desplegable (Fondo Amarillo Inicial con Emoji Batería) -->
-    <button id="btnAcordeonBateria" onclick="alternarAcordeonBateria()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <button id="btnAcordeonBateria" onclick="alternarAcordeonBateria()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
         <span id="textoBtnBateria">Leer Salvedades 🔋</span>
         <span id="flechaAcordeonBateria">▼</span>
     </button>
@@ -7518,7 +7463,7 @@ function ocultarItemBateria(idItem) {
         setTimeout(function() {
             contenido.style.display = 'none';
             flecha.innerText = '▼';
-            textoBtn.innerText = '✅ Salvedades Leídas (Listo)';
+            textoBtn.innerText = '✅ Salvedades Leídas 🎉 (Listo)';
             botonHeader.style.backgroundColor = '#d4edda';
             botonHeader.style.color = '#155724';
             botonHeader.style.borderColor = '#c3e6cb';
@@ -7599,11 +7544,11 @@ function ocultarItemBateria(idItem) {
     </div>
 
     <!-- Alertas operativas -->
-    <div id="alerta_bateria_v10" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box;">
+<div id="alerta_bateria_v10" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
         🔋 <strong>Alerta:</strong> Ofrecer servicio de cambio de batería.
     </div>
 
-    <div id="alerta_grua_v10" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box;">
+    <div id="alerta_grua_v10" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
         ⚠️ <strong>Alerta:</strong> <span id="texto_alerta_grua_v10">Ofrecer servicio de grúa.</span>
     </div>
 </div>
@@ -7735,8 +7680,7 @@ Las tres primeras solicitudes son gratis, durante cada vigencia de la póliza; 1
 
 <!-- BLOQUE: Salvedades Paso de Combustible (Fondo Amarillo - Emojis en Botón) -->
 <div id="bloqueSalvedadesCombustible" style="font-family: sans-serif; max-width: 900px; width: 100%; margin: 15px 0;">
-    <!-- Botón Encabezado de la Lista Desplegable (Con Emojis de Combustible) -->
-    <button id="btnAcordeonCombustible" onclick="alternarAcordeonCombustible()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <button id="btnAcordeonCombustible" onclick="alternarAcordeonCombustible()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
         <span id="textoBtnCombustible">Leer Salvedades ⛽🚙</span>
         <span id="flechaAcordeonCombustible">▼</span>
     </button>
@@ -7805,7 +7749,7 @@ function ocultarItemCombustible(idItem) {
         setTimeout(function() {
             contenido.style.display = 'none';
             flecha.innerText = '▼';
-            textoBtn.innerText = '✅ Salvedades Leídas (Listo)';
+            textoBtn.innerText = '✅ Salvedades Leídas 🎉 (Listo)';
             botonHeader.style.backgroundColor = '#d4edda';
             botonHeader.style.color = '#155724';
             botonHeader.style.borderColor = '#c3e6cb';
@@ -7844,8 +7788,9 @@ function ocultarItemCombustible(idItem) {
 </div>
 
 <!-- Cuadro de alerta de grúa para ACPM con estilo amarillo uniforme -->
-<div id="alerta_acpm" style="display: none; width: 100%; margin-top: 15px; padding: 12px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-family: sans-serif; line-height: 1.6;">
-    ⚠️ <strong>Se recomienda envío de grúa</strong> (si el asegurado insiste que con el paso de combustible se puede desvarar, se le envía.)
+<div id="alerta_acpm" style="display: none; width: 100%; margin-top: 15px; padding: 12px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-family: sans-serif; line-height: 1.6; font-weight: bold;">
+    ⚠️ Alerta: Se recomienda envío de grúa. <br>
+(Si el asegurado insiste que con el paso de combustible se puede desvarar, se le envía.)
 </div>
 
 <script>
@@ -7925,7 +7870,7 @@ function copiarPlantillaV11() {
 <!-- BLOQUE: Salvedades Cambio de Llantas (Fondo Amarillo - Emojis en Botón) -->
 <div id="bloqueSalvedadesLlanta" style="font-family: sans-serif; max-width: 900px; width: 100%; margin: 15px 0;">
     <!-- Botón Encabezado de la Lista Desplegable (Con Emojis de Llanta) -->
-    <button id="btnAcordeonLlanta" onclick="alternarAcordeonLlanta()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <button id="btnAcordeonLlanta" onclick="alternarAcordeonLlanta()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
         <span id="textoBtnLlanta">Leer Salvedades 🛞🚗</span>
         <span id="flechaAcordeonLlanta">▼</span>
     </button>
@@ -7994,7 +7939,7 @@ function ocultarItemLlanta(idItem) {
         setTimeout(function() {
             contenido.style.display = 'none';
             flecha.innerText = '▼';
-            textoBtn.innerText = '✅ Salvedades Leídas (Listo)';
+            textoBtn.innerText = '✅ Salvedades Leídas 🎉 (Listo)';
             botonHeader.style.backgroundColor = '#d4edda';
             botonHeader.style.color = '#155724';
             botonHeader.style.borderColor = '#c3e6cb';
@@ -8062,8 +8007,8 @@ function ocultarItemLlanta(idItem) {
 </div>
 
 <!-- Cuadro de alerta de grúa con estilo amarillo uniforme -->
-<div id="alerta_grua" style="display: none; width: 100%; margin-top: 15px; padding: 12px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-family: sans-serif; line-height: 1.6;">
-    ⚠️ <strong>Ofrecer grúa</strong>
+<div id="alerta_grua" style="display: none; width: 100%; margin-top: 15px; padding: 12px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-family: sans-serif; line-height: 1.6; font-weight: bold;">
+    ⚠️ Alerta: Ofrecer grúa.
 </div>
 
 <script>
@@ -8167,8 +8112,8 @@ function copiarPlantillaV13() {
         </div>
 
         <!-- Salvedades del Artículo Integradas (Livianos) -->
-        <div id="bloqueSalvedadesV12" style="font-family: sans-serif; width: 100%; margin: 0 0 15px 0;">
-            <button id="btnAcordeonV12" onclick="alternarAcordeonV12()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+<div id="bloqueSalvedadesV12" style="font-family: sans-serif; width: 100%; margin: 0 0 15px 0;">
+            <button id="btnAcordeonV12" onclick="alternarAcordeonV12()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
                 <span id="textoBtnV12">Leer Salvedades 🔋🚗</span>
                 <span id="flechaAcordeonV12">▼</span>
             </button>
@@ -8246,12 +8191,14 @@ function copiarPlantillaV13() {
             </p>
         </div>
 
-        <div id="alerta_corriente_v12" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #bee5eb; background-color: #d1ecf1; color: #0c5460; box-sizing: border-box;">
-            ⚡ <strong>Alerta:</strong> Ofrecer servicio de paso de corriente.
+<div id="alerta_corriente_v12" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+             ⚠️ Alerta: Ofrecer servicio de paso de corriente. ⚡
         </div>
 
-        <div id="alerta_asistencia_v12" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box;">
-            📋 <strong>Alerta:</strong> Generar el servicio por asistencia &gt; habilidad del servicio: No viajar a Gestores de coordinación.
+        <div id="alerta_asistencia_v12" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+            ⚠️ Alerta: <br>
+- Generar el servicio por asistencia. <br>
+- Habilidad del servicio: No viajar a Gestores de coordinación.
         </div>
     </div>
 </div>
@@ -8265,7 +8212,7 @@ function copiarPlantillaV13() {
         <strong>OBSERVACIONES y SARA (PESADOS / UTILITARIOS):</strong><br><br>
         
         <!-- Alerta fija de Cobertura de Ciudades (Pesados) -->
-        <div style="width: 100%; margin: 0 0 12px 0; padding: 10px; border-radius: 4px; font-size: 13px; border: 1px solid #bee5eb; background-color: #d1ecf1; color: #0c5460; box-sizing: border-box;">
+        <div style="width: 100%; margin: 0 0 12px 0; padding: 10px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box;">
             📍 <strong>El servicio aplica solo en el perímetro urbano de las siguientes ciudades:</strong> Armenia, Barranquilla, Bogotá, Bucaramanga, Buga, Cali, Cartagena, Cúcuta, Ibagué, Manizales, Medellín, Pereira, Popayán, Santa Marta y Valledupar.
         </div>
 
@@ -8280,7 +8227,7 @@ function copiarPlantillaV13() {
 
         <!-- Salvedades del Artículo Integradas (Pesados) -->
         <div id="bloqueSalvedadesPesado" style="font-family: sans-serif; width: 100%; margin: 0 0 15px 0;">
-            <button id="btnAcordeonPesado" onclick="alternarAcordeonPesado()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+            <button id="btnAcordeonPesado" onclick="alternarAcordeonPesado()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
                 <span id="textoBtnPesado">Leer Salvedades 🔋🚛</span>
                 <span id="flechaAcordeonPesado">▼</span>
             </button>
@@ -8361,7 +8308,7 @@ function copiarPlantillaV13() {
 
         <!-- Alertas dinámicas de diagnóstico para Pesados -->
         <div id="alerta_grua_pesado" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box;">
-            🚨 <strong>Alerta de Flujo:</strong> Activar directamente el servicio de <strong>GRÚA</strong>.
+            🚨 <strong>Alerta:</strong> Generar directamente el servicio de <strong>GRÚA</strong>.
         </div>
 
         <div id="alerta_sara_pesado" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #bee5eb; background-color: #d1ecf1; color: #0c5460; box-sizing: border-box;">
@@ -8464,7 +8411,7 @@ function ocultarItemV12(idItem) {
         setTimeout(function() {
             contenido.style.display = 'none';
             flecha.innerText = '▼';
-            textoBtn.innerText = '✅ Salvedades Leídas (Listo)';
+            textoBtn.innerText = '✅ Salvedades Leídas 🎉 (Listo)';
             botonHeader.style.backgroundColor = '#d4edda';
             botonHeader.style.color = '#155724';
             botonHeader.style.borderColor = '#c3e6cb';
@@ -8507,7 +8454,7 @@ function ocultarItemPesado(idItem) {
         setTimeout(function() {
             contenido.style.display = 'none';
             flecha.innerText = '▼';
-            textoBtn.innerText = '✅ Salvedades Leídas (Listo)';
+            textoBtn.innerText = '✅ Salvedades Leídas 🎉 (Listo)';
             botonHeader.style.backgroundColor = '#d4edda';
             botonHeader.style.color = '#155724';
             botonHeader.style.borderColor = '#c3e6cb';
@@ -8604,7 +8551,7 @@ function ejecutarCopiado(texto) {
 
 <!-- Salvedades del Artículo Integradas (Cerrajero Vehicular) -->
 <div id="bloqueSalvedadesCerrajero" style="font-family: sans-serif; width: 100%; margin: 0 0 15px 0;">
-    <button id="btnAcordeonCerrajero" onclick="alternarAcordeonCerrajero()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <button id="btnAcordeonCerrajero" onclick="alternarAcordeonCerrajero()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
         <span id="textoBtnCerrajero">Leer Salvedades 🔑🚗</span>
         <span id="flechaAcordeonCerrajero">▼</span>
     </button>
@@ -8679,7 +8626,7 @@ function ocultarItemCerrajero(idItem) {
         setTimeout(function() {
             contenido.style.display = 'none';
             flecha.innerText = '▼';
-            textoBtn.innerText = '✅ Salvedades Leídas (Listo)';
+            textoBtn.innerText = '✅ Salvedades Leídas 🎉 (Listo)';
             botonHeader.style.backgroundColor = '#d4edda';
             botonHeader.style.color = '#155724';
             botonHeader.style.borderColor = '#c3e6cb';
@@ -8726,13 +8673,15 @@ function ocultarItemCerrajero(idItem) {
     </p>
 
     <!-- NUEVA: Alerta condicional para niños o mascotas adentro -->
-    <div id="alerta_guardianes_v15" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Marcar guardianes: Persona Encerrada
+<div id="alerta_guardianes_v15" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+        ⚠️ Alerta: Marcar guardianes: Persona Encerrada
     </div>
 
     <!-- Alerta dinámica para llaves de repuesto -->
-    <div id="alerta_llaves_v15" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #bee5eb; background-color: #d1ecf1; color: #0c5460; box-sizing: border-box; line-height: 1.4;">
-        🔑 <strong>Alerta:</strong> Generar desplazamiento por inmovilización del vehículo, en el cual, se le indicará al asegurado: Vamos a enviar un desplazamiento a recoger la llave de repuesto, la cual debe entregarse en un sobre y se la entregarían a usted.
+    <div id="alerta_llaves_v15" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; line-height: 1.4; font-weight: bold;">
+        ⚠️ Alerta: <br>
+- Generar: desplazamiento por inmovilización del vehículo.<br>
+- Indicar al asegurado: "Vamos a enviar un desplazamiento a recoger la llave de repuesto, la cual debe entregarse en un sobre y se la entregarían a usted".
     </div>
 </div>
 
@@ -8837,7 +8786,7 @@ Cuando el asegurado cuente con la cobertura de pérdida de llaves y esté en las
 
 <!-- Salvedades del Artículo Integradas (Llave Segura) -->
 <div id="bloqueSalvedadesLlaveSegura" style="font-family: sans-serif; width: 100%; margin: 0 0 15px 0;">
-    <button id="btnAcordeonLlaveSegura" onclick="alternarAcordeonLlaveSegura()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <button id="btnAcordeonLlaveSegura" onclick="alternarAcordeonLlaveSegura()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
         <span id="textoBtnLlaveSegura">Leer Salvedades 🔑🔒</span>
         <span id="flechaAcordeonLlaveSegura">▼</span>
     </button>
@@ -8900,7 +8849,7 @@ function ocultarItemLlave(idItem) {
         setTimeout(function() {
             contenido.style.display = 'none';
             flecha.innerText = '▼';
-            textoBtn.innerText = '✅ Salvedades Leídas (Listo)';
+            textoBtn.innerText = '✅ Salvedades Leídas 🎉 (Listo)';
             botonHeader.style.backgroundColor = '#d4edda';
             botonHeader.style.color = '#155724';
             botonHeader.style.borderColor = '#c3e6cb';
@@ -8937,13 +8886,15 @@ function ocultarItemLlave(idItem) {
     </p>
 
     <!-- Alerta condicional para Llaves dentro -->
-    <div id="alerta_cerrajero_v16" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box; font-weight: bold;">
-        ⚠️ Generar cerrajero vehicular
+<div id="alerta_cerrajero_v16" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+        ⚠️ Alerta: Generar cerrajero vehicular.
     </div>
 
     <!-- Alerta dinámica para Tiene repuesto -->
-    <div id="alerta_desplazamiento_v16" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #bee5eb; background-color: #d1ecf1; color: #0c5460; box-sizing: border-box; line-height: 1.4;">
-        🔑 <strong>Alerta:</strong> Generar desplazamiento por inmovilización del vehículo, en el cual, se le indicará al asegurado: Vamos a enviar un desplazamiento a recoger la llave de repuesto, la cual debe entregarse en un sobre y se la entregarían a usted.
+    <div id="alerta_desplazamiento_v16" style="display: none; width: 100%; min-width: 520px; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; line-height: 1.4; font-weight: bold;">
+        ⚠️ Alerta: <br>
+- Generar: Desplazamiento por inmovilización del vehículo. <br>
+- Indicar al asegurado: "Vamos a enviar un desplazamiento a recoger la llave de repuesto, la cual debe entregarse en un sobre y se la entregarían a usted".
     </div>
 </div>
 
@@ -9033,7 +8984,7 @@ function copiarPlantillaV16() {
     <strong>Salvedades:</strong><br>
     <ul style="margin: 5px 0 0 0; padding-left: 20px;">
 
-<li>Te comento que vamos a enviarte un vehículo de rescate que te ayudará a sacar el carro desde el parqueadero hasta un punto de fácil acceso. Desde allí, la grúa podrá hacer la recogida sin inconvenientes. Queremos asegurarnos de que el servicio se realice de la forma más ágil y segura posible, ¿de acuerdo?.</li>
+<li>Te confirmo, vamos a enviarte un vehículo de rescate que te ayudará a sacar el carro desde el parqueadero hasta un punto de fácil acceso. Desde allí, la grúa podrá hacer la recogida sin inconvenientes. Queremos asegurarnos de que el servicio se realice de la forma más ágil y segura posible, ¿de acuerdo?.</li>
 
     </ul>
 </div>
@@ -9073,7 +9024,7 @@ function copiarPlantillaV16() {
 <br></p>   
 <!-- Salvedades del Artículo Integradas -->
 <div id="bloqueSalvedadesV7" style="font-family: sans-serif; width: 100%; margin: 0 0 15px 0;">
-    <button id="btnAcordeonV7" onclick="alternarAcordeonV7()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <button id="btnAcordeonV7" onclick="alternarAcordeonV7()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
         <span id="textoBtnV7">Leer Salvedades 📋🚗</span>
         <span id="flechaAcordeonV7">▼</span>
     </button>
@@ -9130,7 +9081,7 @@ function ocultarItemV7(idItem) {
         setTimeout(function() {
             contenido.style.display = 'none';
             flecha.innerText = '▼';
-            textoBtn.innerText = '✅ Salvedades Leídas (Listo)';
+            textoBtn.innerText = '✅ Salvedades Leídas 🎉 (Listo)';
             botonHeader.style.backgroundColor = '#d4edda';
             botonHeader.style.color = '#155724';
             botonHeader.style.borderColor = '#c3e6cb';
@@ -9169,12 +9120,14 @@ function ocultarItemV7(idItem) {
     </p>
 
     <!-- Bloques de Alerta Condicionales -->
-    <div id="alerta_grua_v7" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box;">
-        ⚠️ <strong>Alerta:</strong> Ofrecer servicio de grúa.
+<div id="alerta_grua_v7" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+        ⚠️ Alerta: Ofrecer servicio de grúa.
     </div>
     
-    <div id="alerta_corriente_v7" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #bee5eb; background-color: #d1ecf1; color: #0c5460; box-sizing: border-box; line-height: 1.4;">
-        ⚡ <strong>Alerta:</strong> Ofrecer paso de corriente, cambio de batería o paso de combustible, según el caso. En caso de que el asegurado requiere saber cual es el daño del vehículo se puede generar el servicio de Diagnóstico vehicular.
+    <div id="alerta_corriente_v7" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; line-height: 1.4; font-weight: bold;">
+        ⚠️ Alerta: <br>
+- Ofrecer paso de corriente, cambio de batería o paso de combustible, según el caso. <br>
+- En caso de que el asegurado requiere saber cual es el daño del vehículo se puede generar el servicio de Diagnóstico vehicular.
     </div>
 </div>
 
@@ -9241,7 +9194,7 @@ function copiarPlantillaV7() {
 
 <!-- Salvedades del Artículo Integradas (Asistencia Virtual) -->
 <div id="bloqueSalvedadesVirtual" style="font-family: sans-serif; width: 100%; margin: 0 0 15px 0;">
-    <button id="btnAcordeonVirtual" onclick="alternarAcordeonVirtual()" style="width: 100%; text-align: left; padding: 12px; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <button id="btnAcordeonVirtual" onclick="alternarAcordeonVirtual()" style="width: 100%; text-align: left; padding: 12px; background-color: #FF4F4F; color: #ffffff; border: 1px solid #FF2F2F; border-radius: 6px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-size: 18px;">
         <span id="textoBtnVirtual">Leer Salvedades 📱🚗</span>
         <span id="flechaAcordeonVirtual">▼</span>
     </button>
@@ -9316,7 +9269,7 @@ function ocultarItemVirtual(idItem) {
         setTimeout(function() {
             contenido.style.display = 'none';
             flecha.innerText = '▼';
-            textoBtn.innerText = '✅ Salvedades Leídas (Listo)';
+            textoBtn.innerText = '✅ Salvedades Leídas 🎉 (Listo)';
             botonHeader.style.backgroundColor = '#d4edda';
             botonHeader.style.color = '#155724';
             botonHeader.style.borderColor = '#c3e6cb';
@@ -9356,16 +9309,18 @@ function ocultarItemVirtual(idItem) {
     </p>
 
     <!-- Contenedores dinámicos para las alertas operativas -->
-    <div id="alerta_grua_v8" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404; box-sizing: border-box;">
-        ⚠️ <strong>Alerta:</strong> Ofrecer servicio de grúa.
+<div id="alerta_grua_v8" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+        ⚠️ Alerta: Ofrecer servicio de grúa.
     </div>
     
-    <div id="alerta_corriente_v8" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #bee5eb; background-color: #d1ecf1; color: #0c5460; box-sizing: border-box; line-height: 1.4;">
-        ⚡ <strong>Alerta:</strong> Ofrecer paso de corriente, cambio de batería, paso de combustible o grúa.
+    <div id="alerta_corriente_v8" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; line-height: 1.4; font-weight: bold;">
+        ⚠️ Alerta: Ofrecer paso de corriente, cambio de batería, paso de combustible o grúa.
     </div>
 
-    <div id="alerta_diagnostico_v8" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 13px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box;">
-        📋 <strong>Alerta:</strong> Solo se presta con diagnóstico presencial, en caso de no estar en una ciudad principal, ofrecer grúa.
+    <div id="alerta_diagnostico_v8" style="display: none; width: 100%; margin: 8px 0; padding: 8px; border-radius: 4px; font-size: 15px; border: 1px solid #f5c6cb; background-color: #f8d7da; color: #721c24; box-sizing: border-box; font-weight: bold;">
+        ⚠️ Alerta: <br>
+- Solo se presta con diagnóstico presencial.<br>
+- En caso de no estar en una ciudad principal, ofrecer grúa.
     </div>
 </div>
 
@@ -9646,7 +9601,9 @@ function copiarContenidoLimpioGuion() {
 </div>
     <br>
     <style>
-        #miParrafoValidacion p { margin: 2px 0; line-height: 1.2; font-size: 14px; }
+
+
+#miParrafoValidacion p { margin: 2px 0; line-height: 1.2; font-size: 14px; }
         /* Estilo para que el campo consulta sea grande y profesional */
         .area-consulta {
             width: 100%;
@@ -9663,16 +9620,16 @@ function copiarContenidoLimpioGuion() {
             margin-top: 2px;
             font-family: inherit;
         }
-        /* Estilo para resaltar la nota del grupo resolutor */
+        /* Estilo clásico: Amarillo con letras negras (Texto normal y limpio) */
         .bloque-grupo-val {
-            background-color: #fcfcfc;
-            border-left: 4px solid #0288d1;
-            padding: 10px 15px;
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 12px 15px;
             margin: 10px 0 15px 0;
             font-family: sans-serif;
-            font-size: 13.5px;
+            font-size: 14.5px;
             line-height: 1.4;
-            color: #333;
+            color: #212529;
         }
     </style>
 
@@ -9680,11 +9637,16 @@ function copiarContenidoLimpioGuion() {
     <div class="bloque-grupo-val">
         👥 <strong>Direccionamiento:</strong> Solicitud de validación por el grupo de <strong>"sura-validacion"</strong>, para análisis de un líder o experto disponible.
     </div>
+
+
+
+
+
+
+
+
+        
 <ul> 
-
-
-
-  
 <button onclick="copiarValidacion()">Validación</button>
 <br>
 <div id="miParrafoValidacion" style="font-family: sans-serif; font-size: 14px; max-width: 550px;">
@@ -9916,53 +9878,51 @@ function copiarFasecolda() {
         <a href="https://nik.grupokonecta.co:7070/#/app/articles/18575" target="_blank" rel="noopener noreferrer" style="background-color: #0033a0; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; font-size: 13px; font-weight: bold; display: inline-block;">Art. Nik 📄</a>
 </div>
     <style>
-        #miParrafoGuardianes p { margin: 2px 0; line-height: 1.2; font-size: 14px; }
+     #miParrafoGuardianes p { margin: 2px 0; line-height: 1.2; font-size: 14px; }
         .input-estandar { width: 100%; max-width: 300px; padding: 1px; margin-bottom: 2px; font-family: inherit; }
         .area-grande { width: 100%; max-width: 400px; height: 60px; display: block; margin-top: 2px; font-family: inherit; }
         .campo-oculto { display: none; }
         .checks-group { margin: 5px 0; padding: 5px; border: 1px dashed #ccc; width: fit-content; }
 
-        /* ESTILO: Para resaltar el objetivo de la asistencia de Guardianes */
+        /* ESTILO: Objetivo de Guardianes (Amarillo con letras negras - Texto limpio) */
         .bloque-objetivo-guardianes {
-            background-color: #fcfcfc;
-            border-left: 4px solid #db4437;
-            padding: 10px 15px;
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 12px 15px;
             margin: 10px 0 15px 0;
             font-family: sans-serif;
-            font-size: 13.5px;
+            font-size: 14.5px;
             line-height: 1.4;
-            color: #333;
+            color: #212529;
+        }
+
+        /* ESTILO: Alerta Documentación Sara (¡También amarillo con letras negras!) */
+        .alerta-documentacion-sara {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 12px 15px;
+            margin: 20px 0;
+            font-family: sans-serif;
+            font-size: 14.5px;
+            line-height: 1.5;
+            color: #212529;
+            box-sizing: border-box;
+        }
+        .alerta-documentacion-sara strong {
+            color: #000000;
         }
     </style>
     
     <!-- NUEVO: Bloque informativo sobre el objetivo de la asistencia -->
     <div class="bloque-objetivo-guardianes">
         🛡️ <strong>Objetivo fundamental:</strong> Acompañar a las personas cuando se encuentran en situaciones que ponen en riesgo la vida o la integridad física y psicológica.
-
     </div>
 
 
-<div class="alerta-documentacion-sara">
-    🚨 <strong>Alerta:</strong> Recuerda documentarlo en <strong>Sara → Escalamientos Sura + →</strong> Tipo de gestión: <strong>Guardianes de la vida</strong>.
-</div>
-
-<style>
-    .alerta-documentacion-sara {
-        background-color: #e8f4fd;
-        border-left: 4px solid #007bff;
-        padding: 12px 15px;
-        margin: 20px 0;
-        font-family: 'Segoe UI', Arial, sans-serif;
-        font-size: 14px;
-        line-height: 1.5;
-        color: #004085;
-        border-radius: 0 8px 8px 0;
-        box-sizing: border-box;
-    }
-    .alerta-documentacion-sara strong {
-        color: #002752;
-    }
-</style>
+    <!-- Alerta de documentación en Sara -->
+    <div class="alerta-documentacion-sara">
+        🚨 <strong>Alerta:</strong> Recuerda documentarlo en <strong>Sara → Escalamientos Sura + →</strong> Tipo de gestión: <strong>Guardianes de la vida</strong>.
+    </div>
 
 <ul>   
 
@@ -10241,17 +10201,17 @@ function copiarGuardianes() {
         <a href="https://nik.grupokonecta.co:7070/#/app/articles/53336" target="_blank" rel="noopener noreferrer" style="background-color: #0033a0; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; font-size: 13px; font-weight: bold; display: inline-block;">Art. Nik 📄</a>
     </div>
     
-    <style>
-        /* ESTILO: Para resaltar el protocolo de salvamento de experiencia */
+<style>
+        /* ESTILO: Protocolo de salvamiento de experiencia (Amarillo con letras negras - Texto limpio) */
         .bloque-salvamiento-exp {
-            background-color: #fcfcfc;
-            border-left: 4px solid #28a745;
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
             padding: 12px 15px;
             margin: 10px 0 15px 0;
             font-family: sans-serif;
-            font-size: 13.5px;
+            font-size: 14.5px;
             line-height: 1.5;
-            color: #333;
+            color: #212529;
         }
 
         /* NUEVO ESTILO: Alerta amarilla adaptada para el marco de actuación */
@@ -10304,8 +10264,8 @@ function copiarGuardianes() {
 <button onclick="copiarSalvando()">Experiencia</button>
 <br><br>
 
-<div id="miParrafoSalvando" style="font-family: sans-serif; font-size: 14px; line-height: 1.6;">
-    <p style="margin: 5px 0;"><strong>*Salvando la experiencia:*</strong><br>
+<div id="sljkajkls" style="font-family: sans-serif; font-size: 14px; line-height: 1.6;">
+    <p style="margin: 5px 0;"><strong>Salvando la experiencia:</strong><br>
         <select id="s_novedad" class="input-estandar" style="width: 100%; min-width: 520px; padding: 4px; font-family: inherit;">
             <option value="" disabled selected>Seleccione una novedad...</option>
             <option value="Demora en llegar el servicio">Demora en llegar el servicio</option>
@@ -10333,9 +10293,6 @@ function copiarGuardianes() {
                 <option value="Gestora - Natalia Gómez">Gestora - Natalia Gómez</option>
                 <option value="Gestor - Nicolás Ibarguen">Gestor - Nicolás Ibarguen</option>
                 <option value="Gestora - Lida Guzmán">Gestora - Lida Guzmán</option>
-
-
-
             </optgroup>
             <optgroup label="Líderes">
                 <option value="Líder - Andrés Delgado">Líder - Andrés Delgado</option>
@@ -10358,17 +10315,39 @@ function copiarGuardianes() {
 
 <script>
 function copiarSalvando() {
-    // Buscamos de forma directa y segura los elementos mediante el DOM
-    const selectNovedad = document.getElementById('s_novedad');
-    const selectGestor = document.getElementById('s_gestor');
-    const indicaciones = document.getElementById('s_indicaciones').value;
+    // Buscar los elementos dentro del contenedor con tu ID asignado
+    const contenedor = document.getElementById('sljkajkls');
+    const selectNovedad = contenedor.querySelector('#s_novedad');
+    const selectGestor = contenedor.querySelector('#s_gestor');
+    const txtIndicaciones = contenedor.querySelector('#s_indicaciones').value.trim();
 
-    // Validación por si el asesor no ha elegido nada para prevenir errores del sistema
-    const novedad = selectNovedad.selectedIndex !== -1 ? selectNovedad.options[selectNovedad.selectedIndex].text : "";
-    const gestor = selectGestor.selectedIndex !== -1 ? selectGestor.options[selectGestor.selectedIndex].text : "";
+    // Extraer de forma segura el texto visible seleccionado
+    const novedad = (selectNovedad.selectedIndex > 0) ? selectNovedad.options[selectNovedad.selectedIndex].text : "";
+    const gestor = (selectGestor.selectedIndex > 0) ? selectGestor.options[selectGestor.selectedIndex].text : "";
 
-    const textoFinal = `Salvando la experiencia: ${novedad}\n- Atiende: ${gestor}\n- Indicaciones: ${indicaciones}`;
+    let lineas = [];
     
+    if (novedad) {
+        lineas.push(`Salvando la experiencia: ${novedad}`);
+    } else {
+        lineas.push(`Salvando la experiencia:`);
+    }
+
+    if (gestor) {
+        lineas.push(`- Atiende: ${gestor}`);
+    } else {
+        lineas.push(`- Atiende:`);
+    }
+
+    if (txtIndicaciones) {
+        lineas.push(`- Indicaciones: ${txtIndicaciones}`);
+    } else {
+        lineas.push(`- Indicaciones:`);
+    }
+
+    const textoFinal = lineas.join('\n');
+    
+    // Ejecución del copiado en segundo plano
     const tempInput = document.createElement("textarea");
     tempInput.value = textoFinal;
     tempInput.style.position = "fixed";
@@ -10377,15 +10356,12 @@ function copiarSalvando() {
     tempInput.select();
     try {
         document.execCommand("copy");
-        console.log("Copiado con éxito");
     } catch(err) {
-        console.error("Error al copiar");
+        console.error("Error al copiar", err);
     }
     document.body.removeChild(tempInput);
 }
 </script>
-
-
 
 
 </ul>
@@ -10395,6 +10371,8 @@ function copiarSalvando() {
         <h2 style="margin: 0;">Reporte de Retraso</h2>
         <a href="https://nik.grupokonecta.co:7070/#/app/articles/69531" target="_blank" rel="noopener noreferrer" style="background-color: #0033a0; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; font-size: 13px; font-weight: bold; display: inline-block;">Art. Nik 📄</a>
 </div>
+
+        Un retraso es un evento que interfiere en el tiempo de llegada al sitio del proveedor, afectando la experiencia del cliente.
     
     <style>
         .espaciado p { margin: 4px 0; line-height: 1.2; font-size: 14px; }
@@ -10418,8 +10396,8 @@ function copiarSalvando() {
             color: #856404;
         }
         .recordatorio-novedad-retraso {
-            background-color: #fcfcfc;
-            border-left: 4px solid #0288d1;
+            background-color: #fff3cd;
+            border-left: 4px solid #db4437;
             padding: 8px 12px;
             font-size: 13.5px;
             margin: 12px 0;
@@ -10431,10 +10409,7 @@ function copiarSalvando() {
         }
     </style>
 
-    <!-- Explicación del concepto de negocio -->
-    <div class="bloque-explicativo-retraso">
-        📌 Un retraso es un evento que interfiere en el tiempo de llegada al sitio del proveedor, afectando la experiencia del cliente.
-    </div>
+ 
 
     <!-- Alerta crítica de tiempos de atención y toma de decisiones -->
     <div class="alerta-tiempo-retraso">
@@ -10641,8 +10616,8 @@ function copiarReporte() {
         
         /* ESTILOS: Estructura visual para el enrutamiento de tareas */
         .bloque-direccionamiento-monitoreo {
-            background-color: #fcfcfc;
-            border-left: 4px solid #007bff;
+            background-color: #fff3cd;
+            border-left: 4px solid #db4437;
             padding: 10px 15px;
             margin: 10px 0 15px 0;
             font-family: sans-serif;
@@ -10802,7 +10777,7 @@ function copiarMonitoreo() {
 
     <!-- Alerta Fija Operativa -->
     <div class="alerta-fija">
-        ⚠️ <strong>Alerta:</strong> Documentar en el campo de la descripción del caso.
+        💾 <strong>Alerta:</strong> Documentar en el campo de la descripción del caso.
     </div>
 
 
@@ -15327,7 +15302,7 @@ function ejecutarBuscarV() {
         
         /* ESTILO: Para resaltar el uso exclusivo de la llamada saliente manual */
         .alerta-uso-llamada {
-            background-color: #fdfdfd;
+            background-color: #fff3cd;
             border-left: 4px solid #db4437;
             padding: 8px 12px;
             margin: 10px 0 15px 0;
@@ -15594,6 +15569,7 @@ nav ul {
                 <a href="https://abraya.com.co/sura" target="_blank" class="btn-modern">Abra Ya</a>
                 <a href="https://go.microsoft.com/fwlink/p/?LinkID=2125442&deeplink=mail%2F" target="_blank" class="btn-modern">Correo Indemnizaciones</a>
                 <a href="https://www.google.com/maps/d/viewer?mid=1wkr-fRhH_Jg9jdxwAEC16XJsPtD4za-d&ll=4.813022599999996%2C-75.794415&z=9" target="_blank" class="btn-modern">Zonificación de Talleres</a>
+                <a href="https://login.chattigo.com/pages/login" target="_blank" class="btn-modern">Chattigo</a>
 
 
 
